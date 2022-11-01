@@ -3,6 +3,9 @@
 [![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Community](https://img.shields.io/badge/Join-Community-blue)](https://developer.ibm.com/callforcode/solutions/projects/get-started/) [![Test Bed](https://img.shields.io/badge/View-Website-blue)](https://ppi-storage.s3-web.us-east.cloud-object-storage.appdomain.cloud)
 
 
+_Global Challenge Problem Prompt: Reduce volume of and demand for materials that create the biggest
+waste footprint, and encourage reuse/recycle opportunities_
+
 ## Short description
 
 ### What's the problem?
@@ -15,7 +18,7 @@ Advanced autonomous cyber physical systems can greatly help tackle plastic pollu
 
 ### The idea
 
-Pπ is a computer on the edge that monitors waterflows in sewage and drainage canals. It is capable of detecting and automatically intercepting plastic debris in the water. Powered by Artificial Intelligence, it can differentiate plastic debris from organic waste and intercepts only the plastics. This low cost device is very impactful, making it an affordable solution for daily consumers.
+Pπ is a hardware-software solution with a computer on the edge that monitors waterflows in sewage and drainage canals. It is capable of detecting and automatically intercepting plastic debris in the water. Powered by Artificial Intelligence, it can differentiate plastic debris from organic waste and intercepts only the plastics. This low cost device is very impactful, making it an affordable solution for daily consumers.
 
 ## Demo videos
 
@@ -37,23 +40,31 @@ Product Demo (Shot for the Accelerator):
 3. IoT edge device is setup by user in waterways with camera facing inbound flow. When a debris is detected it is intercepted by the device and returns to initial state.
 4. Data pertaining to the interception is sent to the IBM Cloudant database for analytics.
 5. IBM Cloud Storage is used to store the backend code of the Pπ dashboard.
-6. IBM Code Engine serves the dashboard on web and binds Cloudant data to the webpage dynamically.
+6. IBM Code Engine serves the dashboard on web and binds Cloudant data to the webpage dynamically. It is used to scale the application when demand increases. 
 7. IBM Weather Company is used to retrieve latest weather updates and alert user. (Currently being developed)
 8. Users can view the data online and get alerts. (Mobile app is being developed for ease of use.)
-
-## Features
-1. Differentiate Plastic, Tin and Polythene debris in waterways.
-2. Intercept plastic automatically without user intervention
-3. Real time update with Dashboard.
-4. Works online and Off the grid.
-5. Runs without altering/harming the environment. Simply place the device on waterway and remove when not needed.
-6. Affordable and Fool-proof.
 
 ## Long description
 
 [More detail is available here](./docs/DESCRIPTION.md)
 
+## Features
+1. Differentiate Plastic, Tin and Polythene debris in waterways.
+2. Intercept plastic automatically without user intervention.
+3. Real time update with web Dashboard.
+4. Works online and Off the grid.
+5. Runs without altering/harming the environment. Simply place the device on waterway and remove when not needed.
+6. Affordable and ease to use.
+
 ## Project roadmap
+
+So far we have completed:
+1. User study and requirement analysis.
+2. Design development and review.
+3. Prototype Developement and beta testing in field.
+4. Cloud insfrastructure developement
+5. Web dashboard development.
+6. UX study and documentation.
 
 Proposed schedule on next steps after Call for Code 2021 submission:
 1. Study Legal and Policy restrictions for test regions (Los Angeles and Colombo).
@@ -68,21 +79,20 @@ Proposed schedule on next steps after Call for Code 2021 submission:
 10. Release the first version to public with open access mobile app. 
 
 
-![Roadmap](https://raw.githubusercontent.com/thiloshon/Personal-Plastic-Interceptor/main/images/roadmap.png)
+![Roadmap](https://raw.githubusercontent.com/thiloshon/Personal-Plastic-Interceptor/main/images/roadmap.PNG)
 
 ## Getting started
 
-In this section you add the instructions to run your project on your local machine for development and testing purposes. You can also add instructions on how to deploy the project in production.
-
-- [sample-react-app](./sample-react-app/)
-- [sample-angular-app](./sample-angular-app/)
-- [Explore other projects](https://github.com/upkarlidder/ibmhacks)
+[Complete guide is available here](./docs/TRYOUT.md)
 
 ## Live demo
 
 You can find a running system at [IBM hosted site](https://ppi-storage.s3-web.us-east.cloud-object-storage.appdomain.cloud). Please note it is built mobile-first, thus for best experience view on mobile. Also note the data is published from the Edge Device and viewed in this dashboard.
 
-![Dashboard](https://raw.githubusercontent.com/thiloshon/Personal-Plastic-Interceptor/main/images/dashboard.jpeg)
+Dashboard: 
+
+<img src="https://raw.githubusercontent.com/thiloshon/Personal-Plastic-Interceptor/main/images/dashboard.jpeg" style="width:400px"/>
+
 
 
 ## Built with
