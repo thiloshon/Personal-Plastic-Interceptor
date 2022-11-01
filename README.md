@@ -69,7 +69,7 @@ So far we have completed:
 5. Web dashboard development.
 6. UX study and documentation.
 
-Proposed schedule on next steps after Call for Code 2021 submission:
+Proposed schedule on next steps:
 1. Study Legal and Policy restrictions for test regions (Los Angeles and Colombo).
 2. Convert web dashboard to mobile native application.
 3. Implement trash forecast ML model to alert user of excessive trash inbound.
