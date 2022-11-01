@@ -26,16 +26,16 @@ Pitch Video:
 
 [![Watch the pitch video](https://raw.githubusercontent.com/thiloshon/Personal-Plastic-Interceptor/main/images/thumb.PNG)](https://youtu.be/WuuJH8ljmIs)
 
-Product Demo (Shot for the Accelerator):
+Watch the product explanation video (Shot for the Challenge Accelerator):
 
-[![Watch the product video](https://raw.githubusercontent.com/thiloshon/Personal-Plastic-Interceptor/main/images/thumb2.PNG)](https://youtu.be/BcF8-4348Gs)
+[![Watch the product explanation video](https://raw.githubusercontent.com/thiloshon/Personal-Plastic-Interceptor/main/images/thumb2.PNG)](https://youtu.be/BcF8-4348Gs)
 
 
 ## The architecture
 
 ![Video transcription/translation app](https://raw.githubusercontent.com/thiloshon/Personal-Plastic-Interceptor/main/images/architecturedark.png)
 
-1. DeepTrash dataset is used to build a deep learning model that can differentiate trash in water.
+1. [DeepTrash](https://paperswithcode.com/dataset/deeptrash) dataset is used to build a deep learning model that can differentiate trash in water.
 2. IBM Watson Studio is used to train the Deep Learning model and store the weights for online prediction. (For offline predition, model will be offloaded to edge IoT device)
 3. IoT edge device is setup by user in waterways with camera facing inbound flow. When a debris is detected it is intercepted by the device and returns to initial state.
 4. Data pertaining to the interception is sent to the IBM Cloudant database for analytics.
@@ -52,9 +52,12 @@ Product Demo (Shot for the Accelerator):
 1. Differentiate Plastic, Tin and Polythene debris in waterways.
 2. Intercept plastic automatically without user intervention.
 3. Real time update with web Dashboard.
-4. Works online and Off the grid.
-5. Runs without altering/harming the environment. Simply place the device on waterway and remove when not needed.
-6. Affordable and ease to use.
+4. Alert user when rainfall is expected.
+5. Show amount of animals saved to encourage user.
+6. Show history and statistics of trash collected by user.
+7. Works online and Off the grid.
+8. Runs without altering/harming the environment. Simply place the device on waterway and remove when not needed.
+9. Affordable and ease to use.
 
 ## Project roadmap
 
@@ -83,7 +86,7 @@ Proposed schedule on next steps after Call for Code 2021 submission:
 
 ## Getting started
 
-[Complete guide is available here](./docs/TRYOUT.md)
+[Complete guide to get started with our code is available here.](./docs/TRYOUT.md)
 
 ## Live demo
 
@@ -97,12 +100,11 @@ Dashboard:
 
 ## Built with
 
-- [IBM Cloudant](https://cloud.ibm.com/catalog?search=cloudant#search_results) - The NoSQL database used
-- [IBM Cloud Functions](https://cloud.ibm.com/catalog?search=cloud%20functions#search_results) - The compute platform for handing logic
-- [IBM API Connect](https://cloud.ibm.com/catalog?search=api%20connect#search_results) - The web framework used
-- [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-- [Maven](https://maven.apache.org/) - Dependency management
-- [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+- [IBM Watson Studio](https://www.ibm.com/cloud/watson-studio)
+- [IBM Cloudant NoSQL Database](https://cloud.ibm.com/catalog?search=cloudant#search_results)
+- [IBM Cloud Code Engine](https://www.ibm.com/cloud/code-engine)
+- [IBM Cloud Object Storage](https://www.ibm.com/cloud/object-storage)
+- [IBM Weather Company](https://www.ibm.com/weather)
 
 ## Contributing
 
