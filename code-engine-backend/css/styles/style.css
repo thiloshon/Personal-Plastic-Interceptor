@@ -1,0 +1,80 @@
+body{
+  /*background: linear-gradient(0deg,  #eb92cd, 10%, #7a05f0);*/
+  background: #131519;
+  color: navajowhite;
+}
+.box{
+  background-color: transparent;
+}
+.app-body{
+  padding-top: 0% !important;
+}
+.navbar-item{
+  padding-left: 50px;
+}
+.text-landing p{
+  margin-bottom: -10%;
+}
+
+.largetext{
+  font-size: 80px;
+}
+.text-landing{
+  margin-top: 100px;
+  margin-left: 20px;
+  width: 25%;
+}
+
+.img-landing{
+  margin-left: -14%;
+}
+.logoyo{
+  margin-left: -40px;
+}
+
+.brand-animate {
+    -webkit-animation: rotate 1s infinite linear;
+    animation: rotate 1s infinite linear;
+
+    transform-origin: 24px 24px;
+    -webkit-transform-origin: 24px 24px;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-transition: all 0.3s ease-in-out;
+  	transition: all 0.3s ease-in-out;
+
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.pace-running .brand-animate{
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.pace-done .brand-animate{
+    opacity: 0;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
